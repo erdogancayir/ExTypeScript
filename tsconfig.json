@@ -1,0 +1,13 @@
+{
+    "compilerOptions": {
+        "lib": ["ESNext"],
+        "target": "ES2015",
+        "strict": false,
+        "moduleResolution": "Node",
+        "module": "CommonJS",
+        "esModuleInterop": false,
+        "outDir": "dist",
+        "rootDir": "src",
+        "noUnusedParameters": true
+    }
+}
