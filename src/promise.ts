@@ -64,12 +64,24 @@ function get(url) {
 }
 
 // Örnek kullanım
-get('https://jsonplaceholder.typicode.com/posts/1')
-  .then((data) => {
-    console.log(data);
-  })
-  .catch((err) => {
-    console.error(err);
-  })
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log('Başarılı:', json))
+  .catch(error => console.error('Hata:', error))
   .finally(() => console.log('İstek tamamlandı.'));
 
+
+
+
+  function hello()
+  {
+    return "hello world";
+  }
+
+  function hello2()
+  {
+    return new Promise(resolve => resolve("Hello World2"));
+  }
+
+  const text = hello2();
+  console.log(text);
