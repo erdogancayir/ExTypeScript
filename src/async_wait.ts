@@ -18,6 +18,14 @@ async function _async()
 const __async = _async();
 __async.then(response => console.log(response));
 
-//AWait sadece async fonksiyonlarda çalışır.
+//AWait sadece async fonksiyonların içinde çalışır. 
 
-__async.then(response => console.log(response));
+(async () =>
+{
+    async function _await() {
+        return "await";
+    }
+
+    const _res = await _await(); // bir islemin bitmesini bekletmek icin await kullanıyoruz.
+    console.log(_res);
+})()
