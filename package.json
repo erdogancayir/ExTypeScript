@@ -1,9 +1,9 @@
 {
   "name": "typescript",
-  "type": "module",
+  "type": "commonjs",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "*.js",
   "scripts": {
     "start": "node dist/index.js",
     "build": "tsc",
@@ -14,5 +14,8 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^18.13.0"
+  },
+  "dependencies": {
+    "pnpm": "^7.27.0"
   }
 }
