@@ -26,6 +26,8 @@ function    logPerson(isim: string, soyisim: string, yas: number)
     console.log({isim, soyisim, yas});
 }
 
+logPerson("Kamil", "ismet", 25);
+
 // Arrow function ile fonksiyon tanımlama
 const toplama = (a, b) => console.log(a + b); // toplama func ismi oluyor.
 toplama(4, 5);
@@ -35,5 +37,3 @@ const dizi = [1, 2, 3, 4, 5];
 dizi.forEach((eleman, index) => {
   console.log(`Dizi elemanı ${index} = ${eleman}`);
 });
-
-logPerson("Kamil", "ismet", 25);
