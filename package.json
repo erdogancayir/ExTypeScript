@@ -12,11 +12,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "include": [
+    "./src/**/*",
+    "./node_modules/@xata.io/client/**/*"
+  ],
   "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/dotenv": "^8.2.0",
+    "@types/express": "^4.17.17",
     "@types/node": "^18.13.0",
     "typescript": "^4.9.5"
   },
   "dependencies": {
-    "pnpm": "^7.27.0"
+    "@xata.io/client": "^0.22.1",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "pnpm": "^7.27.0",
+    "xata": "^0.2.0"
   }
 }

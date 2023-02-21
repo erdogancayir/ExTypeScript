@@ -1,0 +1,6 @@
+{
+  "databaseURL": "https://Erdogan-Cayir-s-workspace-jjjh4n.us-east-1.xata.sh/db/first",
+  "codegen": {
+    "output": "xata.ts"
+  }
+}
