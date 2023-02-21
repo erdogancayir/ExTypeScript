@@ -1,14 +1,16 @@
 {
     "compilerOptions": {
         "esModuleInterop": true,
-        "lib": ["ESNext"],
-        "target": "ES2015",
-        "strict": false,
+        "lib": ["ESNext", "DOM", "DOM.Iterable"],
+        "target": "ES6",
+        "strict": true,
         "moduleResolution": "Node",
-        "module": "CommonJS",
+        "module": "ESNext",
         "outDir": "dist",
         "rootDir": "src",
         "noUnusedParameters": true,
-        "allowSyntheticDefaultImports": true,
-    }
+        "allowSyntheticDefaultImports": true
+    },
+    "exclude": ["node_modules"],
+    "include": ["src/**/*"]
 }
